@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Mercedes Sticky Nav</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Mercedes</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Story</a></li>
+            <li><a href="#">Technology & Innovation</a></li>
+            <li><a href="#">Highlights</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <script type="text/javascript">
+    window.addEventListener("scroll", function() {
+        const header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+    </script>
+    <div class="section-wrapper">
+      <div class="box1">
+        <h1>The G-Class.</h1>
+      </div>
+      <div class="box2">
+          <img id="g-class-img1" src="g-class1.jpeg" alt="">
+          <h2>Stronger than rock.</h2>
+          <p>No other like the G-Class: it looks good on all terrains and sets new standards for the off-road performance.</p>
+      </div>
+      <div class="box3">
+          <img id="g-class-img2" src="g-class2.jpeg" alt="">
+          <h2>Stronger than time.</h2>
+          <p>The G-Class retains its characteristic design with its edges and corners, even though the entire vehicle has been almost completely redesigned.</p>
+      </div>
+      <div class="box4">
+          <img id="g-class-img3" src="g-class3.jpeg" alt="">
+          <h2>Stronger than asphalt.</h2>
+          <p>The G-Class also displays its strengths in the city: the G-Class unites extraordinary strengths and precise driving characteristics to form a unique experience.</p>
+      </div>
+    </div>
+
+</body>
+</html>
